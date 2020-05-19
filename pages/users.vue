@@ -6,15 +6,16 @@
     <input type="text" v-model="userId" />
     <button @click="onLoadUser" type="submit">LOad</button>
     <nuxt-child />
+    <Footer />
   </div>
 </template>
 <script>
-// import Logo from '~/components/Logo.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
-  // components: {
-  //   Logo
-  // }
+  components: {
+    Footer
+  },
   data() {
     return {
       userId: ''

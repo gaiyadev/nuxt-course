@@ -1,11 +1,17 @@
 <template>
   <div class="container">
     <h4>Please enter an ID amd Click</h4>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '~/components/Footer.vue'
+
 export default {
+  components: {
+    Footer
+  },
   data() {
     return {}
   }
