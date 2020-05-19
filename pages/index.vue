@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <nuxt-link to="/users">Users</nuxt-link>&nbsp;
+    <nuxt-link to="/admins">Admins</nuxt-link>
+    <br />
     <h4>Please enter an ID amd Click</h4>
     <Footer />
   </div>
