@@ -1,31 +1,10 @@
 <template>
   <div class="container">
-    <nuxt-link to="/users">Users</nuxt-link>&nbsp;
-    <nuxt-link to="/admins">Admins</nuxt-link>
-    <input type="text" v-model="userId" />
-    <button @click="onLoadUser" type="submit">LOad</button>
+    <h4>Please enter an ID amd Click</h4>
   </div>
 </template>
 
-<script>
-// import Logo from '~/components/Logo.vue'
 
-export default {
-  // components: {
-  //   Logo
-  // }
-  data() {
-    return {
-      userId: ''
-    }
-  },
-  methods: {
-    onLoadUser() {
-      this.$router.push('/users/' + this.userId)
-    }
-  }
-}
-</script>
 
 <style>
 .container {
