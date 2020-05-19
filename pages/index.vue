@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <h1>Hello, my first Nuxt APP</h1>
+    <nuxt-link to="/users">Users</nuxt-link>&nbsp;
+    <nuxt-link to="/admins">Admins</nuxt-link>
+    <input type="text" v-model="userId" />
+    <button @click="onLoadUser" type="submit">LOad</button>
   </div>
 </template>
 
@@ -11,6 +14,16 @@ export default {
   // components: {
   //   Logo
   // }
+  data() {
+    return {
+      userId: ''
+    }
+  },
+  methods: {
+    onLoadUser() {
+      this.$router.push('/users/' + this.userId)
+    }
+  }
 }
 </script>
 
