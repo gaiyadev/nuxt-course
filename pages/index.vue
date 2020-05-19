@@ -4,7 +4,14 @@
   </div>
 </template>
 
-
+<script>
+export default {
+  data() {
+    return {}
+  },
+  layout: 'users'
+}
+</script>
 
 <style>
 .container {
