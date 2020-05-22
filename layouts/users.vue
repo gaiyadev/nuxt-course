@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <h3>Users section</h3>
+      <h3> this is User section</h3>
     </header>
     <nuxt />
   </div>
